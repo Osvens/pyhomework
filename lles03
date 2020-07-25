@@ -14,3 +14,25 @@ def number(*num_1, num_2):
 
 
 print(F'result, {number()}')
+
+****************
+
+def my_self (name, surname, year, city, email, telephone):
+    return  ' '.join([name, surname, year, city, email, telephone])
+
+print(my_self((name = 'Vlad', surname = 'Eremich', year = '23', city = 'SPb', email = 'osvens@mail.ru', telephone = 'no'))
+
+***************
+
+def my_func(arg_1, arg_2, arg_3):
+    if arg_1 >= arg_3 and arg_2 >= arg_3:
+        return arg_1 + arg_2
+    elif arg_1 > arg_2 and arg_1 < arg_3:
+        return arg_1 + arg_3
+    else:
+        return arg_3 + arg_2
+
+print(f'res {my_func(int(input("Введите первый аргумент")), int(input("Введите второй аргумент")),  int(input("Введите третий аргумент")))}')
+
+
+*******************
