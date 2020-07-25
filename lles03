@@ -1,0 +1,16 @@
+def number(*num_1, num_2):
+    try:
+        num_1 = int(input("Введите число 1 "))
+        num_2 = int(input("Введите чисдл 2 "))
+        result = num_1 / num_2
+        if num_2 != 0:
+            return num_1 / num_2
+        else:
+            print("Неверное число ")
+    except TypeError:
+        return
+
+        return result
+
+
+print(F'result, {number()}')
