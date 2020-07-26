@@ -36,3 +36,9 @@ print(f'res {my_func(int(input("Введите первый аргумент")),
 
 
 *******************
+
+def int_func (*args):
+    word = input("Введите слово ")
+    print(word.title())
+    return
+int_func()
