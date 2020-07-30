@@ -1,0 +1,51 @@
+def salary():
+    try:
+        time = float(input('Вырабатка в часах '))
+        salary = int(input('Ставка '))
+        bons = int(input('Премия '))
+        res = time * salary + bons
+        print(f'зарплата сотрудника {res}')
+    except SyntaxError:
+        return print('неверные значения')
+salary()
+
+
+
+import sys
+from lesson04 import HM04
+
+time, salary, bons = sys.argv
+
+HM04.hello()
+print(HM04.calculate(salary))
+
+
+************
+
+my_ls = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+new_my_ls = [el for num, el in enumerate(my_ls) if my_ls[num-1] < my_ls[num]]
+print(f'Исходный список {my_ls}')
+print(f'Новый список {new_my_ls}')
+
+************
+
+
+print(f'Числа кратыне 20 и 21 {[el for el in range(20,240) if el % 20==0 or el%21==0]}')
+
+*************
+
+list_m1 = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+new_list_m1 = [el for el in list_m1 if list_m1.count(el) < 2]
+print(new_list_m1)
+
+*************
+
+from random import randint
+
+n_l_1 = [x for x in list(range(100, 1000))]
+res = {x: x * 2 for x in n_l_1}
+print(n_l_1)
+print(res)
+
+*************
+
